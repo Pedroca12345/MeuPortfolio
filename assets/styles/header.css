@@ -1,0 +1,63 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    width: 100%;
+    background-color: #E83F6F;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65.27%;
+}
+
+.logo h2 {
+    font-family: "Life Savers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 14px;
+}
+
+.menu a {
+    color: #000000;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.menu a::after {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background-color: #FFBF00;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    bottom: 0;
+    left: 0;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+button.contato {
+    padding: 6px 27px;
+    border-radius: 8px;
+    background-color: #FFBF00;
+    border: 1px solid #000000;
+    font-weight: bold;
+    transition: .4s;
+}
+
+button.contato:hover {
+    background-color: #B28600;
+}
