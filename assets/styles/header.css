@@ -1,9 +1,14 @@
 header {
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 61px;
     width: 100%;
     background-color: #E83F6F;
+    box-shadow: 0 0 4px #202020;
+    z-index: 1000;
 }
 
 .header-container {
@@ -50,14 +55,16 @@ ul.menu {
 }
 
 button.contato {
+    width: 110px;
     padding: 6px 27px;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #FFBF00;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
+    box-shadow: -1px 2px 0 #CC9900, -3px 4px 0 #000000;
     font-weight: bold;
-    transition: .4s;
 }
 
-button.contato:hover {
-    background-color: #B28600;
+button.contato:active {
+    box-shadow: inset -4px 4px 0 #CC9900;
+    font-size: 12px;
 }

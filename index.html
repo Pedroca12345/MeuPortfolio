@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/resets.css">
+    <link rel="stylesheet" href="assets/styles/home.css">
+    <link rel="stylesheet" href="assets/styles/sobre.css">
 </head>
 <body>
     
@@ -20,22 +22,22 @@
         <div class="header-container">
 
             <div class="logo">
-                <h2>PH</h2>
+                <h2>PH.</h2>
             </div>
 
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="">habilidades</a>
+                        <a href="#habilidades">habilidades</a>
                     </li>
                     <li>
-                        <a href="">Projetos</a>
+                        <a href="#projetos">Projetos</a>
                     </li>
                 </ul>
             </nav>
@@ -49,14 +51,28 @@
 
         <div class="main-container">
 
-            <section id="intro">
+            <section id="home">
 
-                <div class="intro-container">
+                <div class="home-container">
 
                     <div class="presentation">
 
                         <h1>Olá! Meu nome é Pedro Henrique</h1>
                         <h2>E eu sou desenvolvedor Full Stack.</h2>
+
+                        <div class="socials-buttons">
+
+                            <button id="github" class="social-button">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </button>
+
+                            <button id="linkedin" class="social-button">
+                                <i class="fa-brands fa-linkedin"></i>
+                                Linkedin
+                            </button>
+
+                        </div>
 
                     </div>
 
@@ -72,12 +88,16 @@
 
                         <h3>Sobre Mim:</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi expedita veritatis sapiente alias fugiat officiis quos inventore doloribus consequuntur provident vel cum, distinctio dolor impedit repellendus unde obcaecati delectus?</p>
+                        <button id="curriculum" class="curriculum-button">
+                            <i class="fa-solid fa-download"></i>
+                            Currículo
+                        </button>
 
                     </div>
 
                     <div class="img-sobre-mim">
 
-                        <img src="" alt="">
+                        <img src="resources/images/container-img.png" alt="">
 
                     </div>
 
@@ -239,5 +259,7 @@
 
     </main>
 
+
+    <script src="https://kit.fontawesome.com/59772d2d0d.js" crossorigin="anonymous"></script>
 </body>
 </html>
