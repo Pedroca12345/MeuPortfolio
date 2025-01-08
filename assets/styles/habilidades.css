@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
+    width: 100%;
 }
 
 .habilidades-titulo {
@@ -13,7 +14,8 @@
 .cards-habilidades {
     display: flex;
     align-items: center;
-    gap: 20px;
+    width: 100%;
+    gap: 10px;
 }
 
 .habilidades-front-end {
@@ -21,7 +23,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    width: 460px;
+    width: 48.93%;
     height: 354px;
     padding: 15px;
     box-shadow: 0 0 3px #2e2e2e;
@@ -39,16 +41,18 @@
     align-items: center;
     justify-content: left;
     margin-top: 32px;
+    width: 93.47%;
 }
 
 .habilidade {
     margin-bottom: 14px;
+    width: 100%;
 }
 
 .elementos-habilidade {
     display: flex;
     align-items: center;
-    width: 430px;
+    width: 100%;
     height: 32px;
 }
 
@@ -68,7 +72,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    width: 460px;
+    width: 48.93%;
     height: 354px;
     padding: 15px;
     box-shadow: 0 0 3px #2e2e2e;

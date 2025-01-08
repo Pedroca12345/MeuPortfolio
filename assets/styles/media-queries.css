@@ -1,8 +1,6 @@
 
 @media (max-width: 576px) { 
-    .img-sobre-mim {
-        display: none;
-    }
+    
 }
 
 @media (max-width: 768px) { 
@@ -19,11 +17,21 @@
         justify-content: center;
         margin: 0 auto;
     }
+
+    
  }
 
 @media (max-width: 992px) {
     .texto-sobre-mim p{
         font-size: 0.8rem;
+    }
+
+    .habilidades-front-end {
+        width: 100%;
+    }
+
+    .habilidades-back-end {
+        width: 100%;
     }
 }
 
