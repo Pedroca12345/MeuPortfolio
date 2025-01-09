@@ -1,36 +1,30 @@
 .projetos-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
+    width: 1fr;
 }
 
 .projetos-titulo {
     margin-bottom: 53px;
 }
 
-.cards-habilidades {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .cards-projetos-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.projeto-card {
+.projeto-card, .projeto-card-mobile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    width: 220px;
+    width: 1fr;
     height: 332px;
     background-color: #2274A5;
     box-shadow: 0 0 3px #2e2e2e;
@@ -80,4 +74,55 @@
 .button-repositorio:active {
     box-shadow: inset -4px 4px 0 #CC9900;
     font-size: 14px;
+}
+
+.projetos-mobile {
+    display: none;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: all .5s;
+
+    gap: 20px;
+    width: 100%;
+}
+
+.prev-button, .next-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    box-shadow: -1px 2px 0 #D50741, -3px 4px 0 #000000;
+    background-color: #E83F6F;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 10;
+    top: 45%;
+    position: absolute;
+}
+
+.prev-button:active, .next-button:active {
+    box-shadow: inset -4px 4px 0 #D50741;
+    font-size: 14px;
+}
+
+.prev-button {
+    left: -50px;
+}
+
+.next-button {
+    right: -50px;
 }

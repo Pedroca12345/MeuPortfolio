@@ -12,14 +12,24 @@
     .texto-sobre-mim p{
         font-size: 0.9rem;
     }
+    
+    .img-sobre-mim {
+        margin-bottom: 20px;
+    }
+    
     .sobre-container {
         flex-wrap: wrap-reverse;
         justify-content: center;
         margin: 0 auto;
     }
 
-    
- }
+    .cards-projetos-container {
+        display: none;
+    }
+    .projetos-mobile {
+        display: flex;
+    }
+}
 
 @media (max-width: 992px) {
     .texto-sobre-mim p{
@@ -33,6 +43,7 @@
     .habilidades-back-end {
         width: 100%;
     }
+    
 }
 
 @media (max-width: 1200px) {

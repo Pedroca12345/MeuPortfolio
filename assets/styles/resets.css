@@ -42,5 +42,6 @@ button {
 }
 
 section {
+    width: 100%;
     margin: 200px 0;
 }
