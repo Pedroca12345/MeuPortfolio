@@ -29,6 +29,15 @@
     .projetos-mobile {
         display: flex;
     }
+
+    .header-container {
+        display: none;
+    }
+
+    .menu-mobile-container {
+        display: flex;
+    }
+
 }
 
 @media (max-width: 992px) {
