@@ -1,16 +1,10 @@
-#contato img {
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 350px;
-}
-
 .contato-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 30vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #4E99C6;
+    box-shadow: 0 0 4px #202020;
 }
 
 .contato-container p {
@@ -22,7 +16,16 @@
     margin-right: 7px;
 }
 
+.fale-comigo, .onde-me-encontrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .fale-comigo-titulo h3, .onde-me-encontrar h3 {
+    text-wrap: nowrap;
     margin: 35px 0;
 }
 
