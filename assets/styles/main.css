@@ -6,3 +6,51 @@ main {
     width: 65.27%;
     margin: 0 auto;
 }
+
+.whatsapp-button {
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: -1px 2px 0 #075e54, -3px 4px 0 #000;
+    background-color: #25d366;
+    font-size: 32px;
+    z-index: 10;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+}
+
+.whatsapp-button:active {
+    box-shadow: inset -4px 4px 0 #075e54;
+    font-size: 30px;
+}
+
+.back-to-top-button {
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: -1px 2px 0 #D50741, -3px 4px 0 #000;
+    background-color: #E83F6F;
+    font-size: 24px;
+    z-index: 10;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    cursor: default;
+    transition: opacity .3s ease-in;
+}
+
+.back-to-top-button:active {
+    box-shadow: inset -4px 4px 0 #D50741;
+    font-size: 22px;
+}
+
+.show-back-to-top-button {
+    opacity: 1;
+    cursor: pointer;
+}

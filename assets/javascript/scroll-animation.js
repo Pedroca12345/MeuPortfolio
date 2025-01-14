@@ -1,5 +1,27 @@
 const menuLinks = document.querySelectorAll('.menu li a');
 const mobileMenuLinks = document.querySelectorAll('.menu-mobile li a');
+const backToTopButton = document.querySelector('.back-to-top-button');
+
+function scrollBackToTop (button) {
+    button.addEventListener('click', () => {
+        window.scrollTo(0, 0);
+    });
+}
+
+function showBackToTopButtonOnScroll (button) {
+    window.addEventListener('scroll', () => {
+    
+        const windowPosition = window.scrollY;
+    
+        if (windowPosition > 50) {
+            button.classList.add('show-back-to-top-button');
+        } else if (windowPosition <= 50) {
+            button.classList.remove('show-back-to-top-button');
+            button.setAttribute('disabled', 'disabled');
+        }
+    
+    });
+}
 
 function scrollToAnimation (linksArray) {
     linksArray.forEach((link, where) => {
@@ -26,3 +48,5 @@ function scrollToAnimation (linksArray) {
 
 scrollToAnimation(menuLinks);
 scrollToAnimation(mobileMenuLinks);
+scrollBackToTop(backToTopButton);
+showBackToTopButtonOnScroll(backToTopButton);
