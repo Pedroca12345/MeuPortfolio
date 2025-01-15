@@ -15,6 +15,7 @@ function showBackToTopButtonOnScroll (button) {
     
         if (windowPosition > 50) {
             button.classList.add('show-back-to-top-button');
+            button.removeAttribute('disabled');
         } else if (windowPosition <= 50) {
             button.classList.remove('show-back-to-top-button');
             button.setAttribute('disabled', 'disabled');

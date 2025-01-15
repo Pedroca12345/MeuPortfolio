@@ -88,3 +88,19 @@
     border-radius: 5px;
     background-color: #D50741;
 }
+
+.habilidades-front-end .progresso {
+    height: 7px;
+    width: 0;
+    border-radius: 5px;
+    background-color: #E83F6F;
+    transition: width .6s ease-in-out;
+}
+
+.habilidades-back-end .progresso {
+    height: 7px;
+    width: 0;
+    border-radius: 5px;
+    background-color: #FFBF00;
+    transition: width .6s ease-in-out;
+}
