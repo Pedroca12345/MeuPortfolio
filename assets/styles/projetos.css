@@ -24,7 +24,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    width: 1fr;
+    width: 220px;
     height: 332px;
     background-color: #2274A5;
     box-shadow: 0 0 3px #2e2e2e;
@@ -33,8 +33,22 @@
     border-radius: 8px;
 }
 
+.img-projeto {
+    width: 200px;
+    height: 131px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.img-projeto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
 .titulo-projeto p {
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .descricao-projeto p {

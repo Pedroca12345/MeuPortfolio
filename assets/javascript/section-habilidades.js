@@ -24,7 +24,6 @@ function createProgress (skill, progress) {
 function animateProgresses () {
     const windowTop = window.scrollY + (window.innerHeight * 0.75);
     const skillsOffsetTop = skillsFrontend.offsetTop;
-    console.log(windowTop)
 
     progressesArr.forEach((skill) => {
         if((windowTop) > skillsOffsetTop) {
